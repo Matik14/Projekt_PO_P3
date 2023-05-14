@@ -148,56 +148,80 @@ public class Main {
     }
     /////////////////////////klasa
     public class Character {
-        public Character() {
-            //dokończ
+        private String name;
+        private int attack;
+        private int defense;
+        private int spellPower;
+        private int knowledge;
+        private int gold;
+        private int movementPoints;
+        private int experience;
+        private int level;
+        private int spellPoints;
+        private int morale;
+        private int luck;
+
+        public Character(String name, int attack, int defense, int spellPower, int knowledge, int gold, int movementPoints, int experience, int level, int spellPoints, int morale, int luck) {
+            this.name = name;
+            this.attack = attack;
+            this.defense = defense;
+            this.spellPower = spellPower;
+            this.knowledge = knowledge;
+            this.gold = gold;
+            this.movementPoints = movementPoints;
+            this.experience = experience;
+            this.level = level;
+            this.spellPoints = spellPoints;
+            this.morale = morale;
+            this.luck = luck;
         }
         //////////////////////////////////////////////
         String getName(){
-            //dokończ
+            return name;
         }
         //////////////////////////////////////////////
         int getAttack(){
-            //dokończ
+            return attack;
         }
         //////////////////////////////////////////////
         int getDefense(){
-            //dokończ
+            return defense;
         }
         //////////////////////////////////////////////
         int getSpellPower(){
-            //dokończ
+            return spellPower;
         }
         //////////////////////////////////////////////
         int getKnowledge(){
-            //dokończ
+            return knowledge;
         }
         //////////////////////////////////////////////
         int getGold(){
-            //dokończ
+            return gold;
         }
         //////////////////////////////////////////////
         int getMovementPoints(){
-            //dokończ
+            return movementPoints;
         }
         //////////////////////////////////////////////
         int getExperience(){
-            //dokończ
+            return experience;
         }
         //////////////////////////////////////////////
         int getLevel(){
-            //dokończ
+            return level;
         }
         //////////////////////////////////////////////
         int getSpellPoints(){
-            //dokończ
+            return spellPoints;
         }
         //////////////////////////////////////////////
         int getMorale(){
-            //dokończ
+            return morale;
         }
         //////////////////////////////////////////////
         int getLuck(){
-            //dokończ
+            return luck;
         }
         //////////////////////////////////////////////
         List<Unit> getArmy(){
@@ -205,51 +229,51 @@ public class Main {
         }
         //////////////////////////////////////////////
         void setName(String name){
-            //dokończ
+            this.name = name;
         }
         //////////////////////////////////////////////
         void setAttack(int attack){
-            //dokończ
+            this.attack = attack;
         }
         //////////////////////////////////////////////
         void setDefense(int defense){
-            //dokończ
+            this.defense = defense;
         }
         //////////////////////////////////////////////
         void setSpellPower(int spellPower){
-            //dokończ
+            this.spellPower = spellPower;
         }
         //////////////////////////////////////////////
         void setKnowledge(int knowledge){
-            //dokończ
+            this.knowledge = knowledge;
         }
         //////////////////////////////////////////////
         void setGold(int gold){
-            //dokończ
+            this.gold = gold;
         }
         //////////////////////////////////////////////
         void setMovementPoints(int movementPoints){
-            //dokończ
+            this.movementPoints = movementPoints;
         }
         //////////////////////////////////////////////
         void setExperience(int experience){
-            //dokończ
+            this.experience = experience;
         }
         //////////////////////////////////////////////
         void setLevel(int level){
-            //dokończ
+            this.level = level;
         }
         //////////////////////////////////////////////
         void setSpellPoints(int spellPoints){
-            //dokończ
+            this.spellPoints = spellPoints;
         }
         //////////////////////////////////////////////
         void setMorale(int morale){
-            //dokończ
+            this.morale = morale;
         }
         //////////////////////////////////////////////
         void setLuck(int luck){
-            //dokończ
+            this.luck = luck;
         }
         //////////////////////////////////////////////
         void addToArmy(Unit unit){
@@ -433,24 +457,28 @@ public class Main {
     }
     /////////////////////////klasa
     public class Player {
-        public Player() {
-            //dokończ
+        private String name;
+        private int gold;
+
+        public Player(String name, int gold) {
+            this.name = name;
+            this.gold = gold;
         }
         //////////////////////////////////////////////
         String getName(){
-            //dokończ
+            return name;
         }
         //////////////////////////////////////////////
         void setName(String name){
-            //dokończ
+            this.name = name;
         }
         //////////////////////////////////////////////
         int getGold(){
-            //dokończ
+            return gold;
         }
         //////////////////////////////////////////////
         void setGold(int gold){
-            //dokończ
+            this.gold = gold;
         }
         //////////////////////////////////////////////
         List<Hero> getHeroes(){
