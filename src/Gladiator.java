@@ -8,6 +8,7 @@ public class Gladiator {
     private int health;
     private int level;
     private int experience;
+    private int wins;
 
     public Gladiator(String name, int strength, int agility, int endurance) {
         this.name = name;
@@ -17,6 +18,7 @@ public class Gladiator {
         this.health = calculateMaxHealth();
         this.level = 1;
         this.experience = 0;
+        this.wins = 0;
     }
 
     public String getName() {
@@ -67,6 +69,6 @@ public class Gladiator {
 
     public int getWins() {
 
-        return 0;   //do zmiany
+        return wins;
     }
 }
